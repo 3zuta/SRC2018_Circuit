@@ -1,0 +1,184 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L L7812CV U1
+U 1 1 5B33B815
+P 4500 2600
+F 0 "U1" H 4500 2600 60  0000 C CNN
+F 1 "L7812CV" H 4500 2700 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal_MountedFromLS_LargePads" H 4500 2600 60  0001 C CNN
+F 3 "" H 4500 2600 60  0000 C CNN
+	1    4500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR3
+U 1 1 5B33B882
+P 5000 2600
+F 0 "#PWR3" H 5000 2450 50  0001 C CNN
+F 1 "+12V" H 5000 2740 50  0000 C CNN
+F 2 "" H 5000 2600 50  0000 C CNN
+F 3 "" H 5000 2600 50  0000 C CNN
+	1    5000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR1
+U 1 1 5B33B8D3
+P 4000 2600
+F 0 "#PWR1" H 4000 2450 50  0001 C CNN
+F 1 "+BATT" H 4000 2740 50  0000 C CNN
+F 2 "" H 4000 2600 50  0000 C CNN
+F 3 "" H 4000 2600 50  0000 C CNN
+	1    4000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5B33B91D
+P 4500 3050
+F 0 "#PWR2" H 4500 2800 50  0001 C CNN
+F 1 "GND" H 4500 2900 50  0000 C CNN
+F 2 "" H 4500 3050 50  0000 C CNN
+F 3 "" H 4500 3050 50  0000 C CNN
+	1    4500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5B33B958
+P 5000 2800
+F 0 "C2" H 5025 2900 50  0000 L CNN
+F 1 "0.1u" H 5025 2700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5038 2650 50  0001 C CNN
+F 3 "" H 5000 2800 50  0000 C CNN
+	1    5000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2600 5000 2650
+Wire Wire Line
+	5000 3050 5000 2950
+Wire Wire Line
+	4000 3050 5000 3050
+$Comp
+L C C1
+U 1 1 5B33B9B6
+P 4000 2800
+F 0 "C1" H 4025 2900 50  0000 L CNN
+F 1 "0.33u" H 4025 2700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4038 2650 50  0001 C CNN
+F 3 "" H 4000 2800 50  0000 C CNN
+	1    4000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2650 4000 2600
+Wire Wire Line
+	4000 2950 4000 3050
+Connection ~ 4500 3050
+$Comp
+L CP1 C3
+U 1 1 5B33C876
+P 5050 1500
+F 0 "C3" H 5075 1600 50  0000 L CNN
+F 1 "100u" H 5075 1400 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 5050 1500 50  0001 C CNN
+F 3 "" H 5050 1500 50  0000 C CNN
+	1    5050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C4
+U 1 1 5B33C8A2
+P 5350 1500
+F 0 "C4" H 5375 1600 50  0000 L CNN
+F 1 "100u" H 5375 1400 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 5350 1500 50  0001 C CNN
+F 3 "" H 5350 1500 50  0000 C CNN
+	1    5350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR4
+U 1 1 5B33CD3B
+P 5050 1350
+F 0 "#PWR4" H 5050 1200 50  0001 C CNN
+F 1 "+12V" H 5050 1490 50  0000 C CNN
+F 2 "" H 5050 1350 50  0000 C CNN
+F 3 "" H 5050 1350 50  0000 C CNN
+	1    5050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 5B33CF80
+P 5200 1700
+F 0 "#PWR5" H 5200 1450 50  0001 C CNN
+F 1 "GND" H 5200 1550 50  0000 C CNN
+F 2 "" H 5200 1700 50  0000 C CNN
+F 3 "" H 5200 1700 50  0000 C CNN
+	1    5200 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1650 5050 1700
+Wire Wire Line
+	5050 1700 5350 1700
+Wire Wire Line
+	5350 1700 5350 1650
+Connection ~ 5200 1700
+$Comp
+L +BATT #PWR6
+U 1 1 5B33D13A
+P 5350 1350
+F 0 "#PWR6" H 5350 1200 50  0001 C CNN
+F 1 "+BATT" H 5350 1490 50  0000 C CNN
+F 2 "" H 5350 1350 50  0000 C CNN
+F 3 "" H 5350 1350 50  0000 C CNN
+	1    5350 1350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
