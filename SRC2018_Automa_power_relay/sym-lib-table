@@ -1,0 +1,12 @@
+(sym_lib_table
+  (lib (name src2018_Aut_Power_ver_relay-rescue)(type Legacy)(uri ${KIPRJMOD}/src2018_Aut_Power_ver_relay-rescue.lib)(options "")(descr ""))
+  (lib (name 74xgxx1)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/74xgxx.lib)(options "")(descr ""))
+  (lib (name 74xx)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/74xx.lib)(options "")(descr ""))
+  (lib (name audio1)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/audio.lib)(options "")(descr ""))
+  (lib (name device1)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/device.lib)(options "")(descr ""))
+  (lib (name graphic1)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/graphic.lib)(options "")(descr ""))
+  (lib (name interface1)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/interface.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/power.lib)(options "")(descr ""))
+  (lib (name pspice)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/pspice.lib)(options "")(descr ""))
+  (lib (name video1)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/video.lib)(options "")(descr ""))
+)

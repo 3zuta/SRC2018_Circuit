@@ -1,6 +1,75 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:adc-dac
+LIBS:adm3054
+LIBS:analog_switches
+LIBS:arduino
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:Hori_lib
+LIBS:intel
+LIBS:interface
+LIBS:leds
+LIBS:linear
+LIBS:logo
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip1
+LIBS:microcontrollers
+LIBS:motorola
+LIBS:msp430
+LIBS:myDevice
+LIBS:myPic
+LIBS:myRelay
+LIBS:nxp_armmcu
+LIBS:opto
+LIBS:philips
+LIBS:pic24fjxxgb
+LIBS:power
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:sensors
+LIBS:siliconi
+LIBS:special
+LIBS:stm8
+LIBS:stm32
+LIBS:STM32F103_48
+LIBS:supertex
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:user
+LIBS:valves
+LIBS:video
+LIBS:volumes
+LIBS:xilinx
+LIBS:Miz
 LIBS:src2018_Aut_Power_ver_relay-cache
-EELAYER 30 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +84,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:LQ_Relay U1
+L LQ_Relay U1
 U 1 1 5B8D2B66
 P 3125 2250
 F 0 "U1" H 3075 2250 60  0000 C CNN
@@ -26,7 +95,7 @@ F 3 "" H 3000 2250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:CONN_01X02 P6
+L CONN_01X02 P6
 U 1 1 5B8D2B9E
 P 2450 2075
 F 0 "P6" H 2450 2225 50  0000 C CNN
@@ -37,7 +106,7 @@ F 3 "" H 2450 2075 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR01
+L +5V #PWR01
 U 1 1 5B8D2BFA
 P 2650 2375
 F 0 "#PWR01" H 2650 2465 20  0001 C CNN
@@ -48,7 +117,7 @@ F 3 "" H 2650 2375 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:GND #PWR02
+L GND #PWR02
 U 1 1 5B8D2C34
 P 2650 2025
 F 0 "#PWR02" H 2650 2025 30  0001 C CNN
@@ -62,7 +131,7 @@ NoConn ~ 3250 2575
 Text Label 3325 1925 0    60   ~ 0
 MD_OUT
 $Comp
-L power:+BATT #PWR03
+L +BATT #PWR03
 U 1 1 5B8D2CAD
 P 3175 1925
 F 0 "#PWR03" H 3175 1875 20  0001 C CNN
@@ -73,7 +142,7 @@ F 3 "" H 3175 1925 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR04
+L +BATT #PWR04
 U 1 1 5B8D2CE1
 P 1600 1625
 F 0 "#PWR04" H 1600 1575 20  0001 C CNN
@@ -84,7 +153,7 @@ F 3 "" H 1600 1625 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:CONN_01X02 P1
+L CONN_01X02 P1
 U 1 1 5B8D2CFF
 P 1800 1575
 F 0 "P1" H 1800 1725 50  0000 C CNN
@@ -95,7 +164,7 @@ F 3 "" H 1800 1575 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:GND #PWR05
+L GND #PWR05
 U 1 1 5B8D2D7C
 P 1600 1525
 F 0 "#PWR05" H 1600 1525 30  0001 C CNN
@@ -106,7 +175,7 @@ F 3 "" H 1600 1525 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:7805 U2
+L 7805 U2
 U 1 1 5B8D2E37
 P 4300 1925
 F 0 "U2" H 4450 1729 60  0000 C CNN
@@ -117,7 +186,7 @@ F 3 "" H 4300 1925 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:C C1
+L C C1
 U 1 1 5B8D2EEA
 P 3900 2075
 F 0 "C1" H 3900 2175 40  0000 L CNN
@@ -128,7 +197,7 @@ F 3 "" H 3900 2075 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR06
+L +BATT #PWR06
 U 1 1 5B8D2F34
 P 3900 1875
 F 0 "#PWR06" H 3900 1825 20  0001 C CNN
@@ -139,7 +208,7 @@ F 3 "" H 3900 1875 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:C C2
+L C C2
 U 1 1 5B8D2F9E
 P 4700 2075
 F 0 "C2" H 4700 2175 40  0000 L CNN
@@ -150,7 +219,7 @@ F 3 "" H 4700 2075 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR07
+L +5V #PWR07
 U 1 1 5B8D3016
 P 4700 1875
 F 0 "#PWR07" H 4700 1965 20  0001 C CNN
@@ -161,7 +230,7 @@ F 3 "" H 4700 1875 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:GND #PWR08
+L GND #PWR08
 U 1 1 5B8D30AC
 P 4300 2300
 F 0 "#PWR08" H 4300 2300 30  0001 C CNN
@@ -172,12 +241,12 @@ F 3 "" H 4300 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 2300 4300 2275
+	4300 2300 4300 2175
 Wire Wire Line
-	3900 2275 4300 2275
+	3900 2275 4700 2275
 Connection ~ 4300 2275
 $Comp
-L power:+BATT #PWR09
+L +BATT #PWR09
 U 1 1 5B8D32CE
 P 5050 1875
 F 0 "#PWR09" H 5050 1825 20  0001 C CNN
@@ -188,7 +257,7 @@ F 3 "" H 5050 1875 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:CP1 C3
+L CP1 C3
 U 1 1 5B8D338A
 P 5050 2075
 F 0 "C3" H 5100 2175 50  0000 L CNN
@@ -199,7 +268,7 @@ F 3 "" H 5050 2075 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:CP1 C4
+L CP1 C4
 U 1 1 5B8D33CC
 P 5350 2075
 F 0 "C4" H 5400 2175 50  0000 L CNN
@@ -210,7 +279,7 @@ F 3 "" H 5350 2075 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR010
+L +5V #PWR010
 U 1 1 5B8D33FE
 P 5350 1875
 F 0 "#PWR010" H 5350 1965 20  0001 C CNN
@@ -221,7 +290,7 @@ F 3 "" H 5350 1875 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:GND #PWR011
+L GND #PWR011
 U 1 1 5B8D3481
 P 5350 2300
 F 0 "#PWR011" H 5350 2300 30  0001 C CNN
@@ -236,7 +305,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 2275 5050 2275
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:CONN_01X02 P2
+L CONN_01X02 P2
 U 1 1 5B8D3669
 P 1800 2150
 F 0 "P2" H 1800 2300 50  0000 C CNN
@@ -249,7 +318,7 @@ $EndComp
 Text Label 1600 2200 2    60   ~ 0
 MD_OUT
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:GND #PWR012
+L GND #PWR012
 U 1 1 5B8D3863
 P 1600 2100
 F 0 "#PWR012" H 1600 2100 30  0001 C CNN
@@ -260,7 +329,7 @@ F 3 "" H 1600 2100 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:CONN_01X02 P3
+L CONN_01X02 P3
 U 1 1 5B8D3949
 P 1800 2775
 F 0 "P3" H 1800 2925 50  0000 C CNN
@@ -273,7 +342,7 @@ $EndComp
 Text Label 1600 2825 2    60   ~ 0
 MD_OUT
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:GND #PWR013
+L GND #PWR013
 U 1 1 5B8D3950
 P 1600 2725
 F 0 "#PWR013" H 1600 2725 30  0001 C CNN
@@ -284,7 +353,7 @@ F 3 "" H 1600 2725 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:CONN_01X02 P4
+L CONN_01X02 P4
 U 1 1 5B8D39A6
 P 1800 3375
 F 0 "P4" H 1800 3525 50  0000 C CNN
@@ -295,7 +364,7 @@ F 3 "" H 1800 3375 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:GND #PWR014
+L GND #PWR014
 U 1 1 5B8D3A23
 P 1600 3325
 F 0 "#PWR014" H 1600 3325 30  0001 C CNN
@@ -306,7 +375,7 @@ F 3 "" H 1600 3325 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR015
+L +5V #PWR015
 U 1 1 5B8D3B57
 P 1600 3425
 F 0 "#PWR015" H 1600 3515 20  0001 C CNN
@@ -317,7 +386,7 @@ F 3 "" H 1600 3425 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:CONN_01X02 P5
+L CONN_01X02 P5
 U 1 1 5B8D3C6E
 P 1825 3950
 F 0 "P5" H 1825 4100 50  0000 C CNN
@@ -328,7 +397,7 @@ F 3 "" H 1825 3950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:GND #PWR016
+L GND #PWR016
 U 1 1 5B8D3C74
 P 1625 3900
 F 0 "#PWR016" H 1625 3900 30  0001 C CNN
@@ -339,7 +408,7 @@ F 3 "" H 1625 3900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR017
+L +5V #PWR017
 U 1 1 5B8D3C7A
 P 1625 4000
 F 0 "#PWR017" H 1625 4090 20  0001 C CNN
@@ -350,7 +419,7 @@ F 3 "" H 1625 4000 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:LED D1
+L LED D1
 U 1 1 5B8D3DBE
 P 3675 3075
 F 0 "D1" H 3675 3175 50  0000 C CNN
@@ -361,7 +430,7 @@ F 3 "" H 3675 3075 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:R R1
+L R R1
 U 1 1 5B8D3E95
 P 3325 3075
 F 0 "R1" V 3405 3075 40  0000 C CNN
@@ -372,7 +441,7 @@ F 3 "" H 3325 3075 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:LED D2
+L LED D2
 U 1 1 5B8D3EF7
 P 3675 3350
 F 0 "D2" H 3675 3450 50  0000 C CNN
@@ -383,7 +452,7 @@ F 3 "" H 3675 3350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:R R2
+L R R2
 U 1 1 5B8D3F40
 P 3325 3350
 F 0 "R2" V 3405 3350 40  0000 C CNN
@@ -394,7 +463,7 @@ F 3 "" H 3325 3350 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:LED D3
+L LED D3
 U 1 1 5B8D3F90
 P 3675 3625
 F 0 "D3" H 3675 3725 50  0000 C CNN
@@ -405,7 +474,7 @@ F 3 "" H 3675 3625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:R R3
+L R R3
 U 1 1 5B8D3FD4
 P 3325 3625
 F 0 "R3" V 3405 3625 40  0000 C CNN
@@ -416,7 +485,7 @@ F 3 "" H 3325 3625 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR018
+L +5V #PWR018
 U 1 1 5B8D40DC
 P 3175 3625
 F 0 "#PWR018" H 3175 3715 20  0001 C CNN
@@ -429,7 +498,7 @@ $EndComp
 Text Label 3175 3350 2    60   ~ 0
 MD_OUT
 $Comp
-L power:+BATT #PWR019
+L +BATT #PWR019
 U 1 1 5B8D4401
 P 3175 3075
 F 0 "#PWR019" H 3175 3025 20  0001 C CNN
@@ -440,7 +509,7 @@ F 3 "" H 3175 3075 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L src2018_Aut_Power_ver_relay-rescue:GND #PWR020
+L GND #PWR020
 U 1 1 5B8D477A
 P 3900 3675
 F 0 "#PWR020" H 3900 3675 30  0001 C CNN
@@ -451,7 +520,7 @@ F 3 "" H 3900 3675 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 3075 3900 3350
+	3900 3075 3900 3675
 Wire Wire Line
 	3900 3625 3875 3625
 Wire Wire Line
@@ -460,12 +529,4 @@ Connection ~ 3900 3625
 Wire Wire Line
 	3900 3075 3875 3075
 Connection ~ 3900 3350
-Wire Wire Line
-	4300 2275 4300 2175
-Wire Wire Line
-	4300 2275 4700 2275
-Wire Wire Line
-	3900 3625 3900 3675
-Wire Wire Line
-	3900 3350 3900 3625
 $EndSCHEMATC

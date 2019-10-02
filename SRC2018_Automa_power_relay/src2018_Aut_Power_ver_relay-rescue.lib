@@ -1,58 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# device1_R
+# 7805
 #
-DEF device1_R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "device1_R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+BATT
-#
-DEF power_+BATT #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+BATT" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +BATT 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# src2018_Aut_Power_ver_relay-rescue_7805
-#
-DEF src2018_Aut_Power_ver_relay-rescue_7805 U 0 30 N Y 1 F N
+DEF 7805 U 0 30 N Y 1 F N
 F0 "U" 150 -196 60 H V C CNN
-F1 "src2018_Aut_Power_ver_relay-rescue_7805" 0 200 60 H V C CNN
+F1 "7805" 0 200 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -63,11 +16,11 @@ X VO 3 400 50 200 L 40 40 1 1 w
 ENDDRAW
 ENDDEF
 #
-# src2018_Aut_Power_ver_relay-rescue_C
+# C
 #
-DEF src2018_Aut_Power_ver_relay-rescue_C C 0 10 N Y 1 F N
+DEF C C 0 10 N Y 1 F N
 F0 "C" 0 100 40 H V L CNN
-F1 "src2018_Aut_Power_ver_relay-rescue_C" 6 -85 40 H V L CNN
+F1 "C" 6 -85 40 H V L CNN
 F2 "" 38 -150 30 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -83,11 +36,11 @@ X ~ 2 0 -200 170 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# src2018_Aut_Power_ver_relay-rescue_CONN_01X02
+# CONN_01X02
 #
-DEF src2018_Aut_Power_ver_relay-rescue_CONN_01X02 P 0 40 Y N 1 F N
+DEF CONN_01X02 P 0 40 Y N 1 F N
 F0 "P" 0 150 50 H V C CNN
-F1 "src2018_Aut_Power_ver_relay-rescue_CONN_01X02" 100 0 50 V V C CNN
+F1 "CONN_01X02" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -105,11 +58,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# src2018_Aut_Power_ver_relay-rescue_CP1
+# CP1
 #
-DEF src2018_Aut_Power_ver_relay-rescue_CP1 C 0 10 N N 1 F N
+DEF CP1 C 0 10 N N 1 F N
 F0 "C" 50 100 50 H V L CNN
-F1 "src2018_Aut_Power_ver_relay-rescue_CP1" 50 -100 50 H V L CNN
+F1 "CP1" 50 -100 50 H V L CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -125,11 +78,11 @@ X ~ 2 0 -200 180 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# src2018_Aut_Power_ver_relay-rescue_GND
+# GND
 #
-DEF src2018_Aut_Power_ver_relay-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 0 30 H I C CNN
-F1 "src2018_Aut_Power_ver_relay-rescue_GND" 0 -70 30 H I C CNN
+F1 "GND" 0 -70 30 H I C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -138,11 +91,11 @@ X GND 1 0 0 0 U 30 30 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# src2018_Aut_Power_ver_relay-rescue_LED
+# LED
 #
-DEF src2018_Aut_Power_ver_relay-rescue_LED D 0 40 Y N 1 F N
+DEF LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "src2018_Aut_Power_ver_relay-rescue_LED" 0 -100 50 H V C CNN
+F1 "LED" 0 -100 50 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -164,11 +117,11 @@ X K 2 200 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# src2018_Aut_Power_ver_relay-rescue_LQ_Relay
+# LQ_Relay
 #
-DEF src2018_Aut_Power_ver_relay-rescue_LQ_Relay U 0 40 Y Y 1 F N
+DEF LQ_Relay U 0 40 Y Y 1 F N
 F0 "U" -50 0 60 H V C CNN
-F1 "src2018_Aut_Power_ver_relay-rescue_LQ_Relay" -125 -250 60 H V C CNN
+F1 "LQ_Relay" -125 -250 60 H V C CNN
 F2 "" -125 0 60 H V C CNN
 F3 "" -125 0 60 H V C CNN
 DRAW
